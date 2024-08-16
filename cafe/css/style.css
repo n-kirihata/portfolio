@@ -1,0 +1,51 @@
+body {
+    color: #241102;
+    padding: 10px;
+}
+
+header {
+    margin-bottom: 20px;
+    /* background-color: #241102; */
+}
+.container {
+    align-items: baseline;
+}
+.nav-list {
+    list-style: none;
+}
+.nav-list li {
+    padding-right: 15px;
+}
+a {
+    text-decoration: none;
+}
+a:link {
+    color: #241102;  
+}
+a:visited {
+    color: #241102;
+}
+.nav-link > ul {
+    display: flex;
+}
+.nav-link a {
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+
+.mv-container img{
+    width: 200px;
+    height: auto;
+}
+
+/* header*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list {
+    display: flex;
+
+}

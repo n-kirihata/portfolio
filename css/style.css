@@ -1,0 +1,411 @@
+/* PC,スマホ共通スタイル */
+body {
+  font-family: "Calibli", "Noto Sans Japanese", "Meiryo", san-selif;
+  font-size: 15px;
+  color: #333333;
+  letter-spacing: 0.05em;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-style: none;
+}
+.pc-only {
+  display: none;
+}
+
+.sp-only{
+  display: none;
+}
+
+
+/* レイアウト */
+.wrapper {
+  padding-top: 100px ;
+}
+.section {
+  max-width: 800px;
+  padding: 1em;
+  margin: 2em auto;
+  border: solid 1px #a1a1a1;
+}
+
+/*.section:nth-of-type(odd) {
+  background-color: #f5f5dc; 
+} */
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0 40px 40px 40px;
+}
+
+
+
+/* ==========
+  PC style 
+===========*/
+
+/* 横幅設定 
+body {
+  max-width: 1080px;
+  min-width: 960px;
+  margin: 0 auto;
+}
+*/
+
+/* -----------
+　　見出し
+----------- */
+.item-name {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+
+.lead {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+
+/* ------------
+    header 
+-------------*/
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px -6px rgba(0,0,0,.1);
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.site-title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-right: 20px;
+  letter-spacing: 0.05em;
+}
+ /* 
+.site-title a {
+  color: #333333;
+}
+  */
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style: none;
+  font-weight: bold;
+}
+.nav-list-item:not(:last-child) {
+  margin-right: 15px;
+}
+.nav-list-item a {
+  position: relative;
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 0;
+  transition: 3s;
+  letter-spacing: 0.05em;
+  color: #333333;
+}
+.nav-list-item a:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  content: "";
+  transition: 0.5s;
+  -webkit-transform: translateX(-50%);
+  background-color: #333333;
+}
+.nav-list-item a:hover:after {
+  width: 100%;
+}
+
+
+/* nav link装飾設定 
+.nav-list-item > a:link {
+  color: #333333;
+}
+.nav-list-item > a:visited {
+  color: #333333;
+}
+.nav-list-item > a:hover {
+  color: #333333;
+  text-decoration: underline;
+}
+.nav-list-item > a:active {
+  color: #333333;
+}
+*/
+
+/* ------------
+     main 
+-------------*/
+.mv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  text-align: center;
+  /* margin: 50px; */
+  /* 　↑mvが隠れない。サンプルには無 */
+}
+.mv-container {
+  position: relative;
+  padding: 0 20px;
+}
+.mv-container img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* ------
+  works
+-------*/
+.works-list {  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: -40px;
+}
+.works-item {
+  width: 31.74603%;
+  height: 1.58730%;
+  margin-bottom: 40px;
+  color: #333333;
+}
+.works-item:hover {
+  opacity: .9;
+}
+.works-item:nth-of-type(3n) {
+  margin-right: 0;
+}
+.works-img img {
+  width: 300px;
+  height: auto;
+  border: 1px solid #e6e6e6;
+}
+
+.works-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+.works-info {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+/* ------
+  skill
+-------*/
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -50px;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 31.74603%;
+  margin-bottom: 30px;
+}
+
+.skill-img {
+  width: 60px;
+  height: auto;
+  margin-right: 20px;
+}
+.skill-body {
+  align-items: center;
+  flex: 1;  
+}
+.skill-name {
+  
+  margin-bottom: 10px;
+}
+
+.skill-text {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+/* ------
+  about
+-------*/
+.profile {
+  display: flex;
+  flex-wrap: wrap; 
+  max-width: 800px;
+  margin: 0 auto;
+}
+.profile-img {
+  width: 40%;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+}
+.profile-body {
+  flex: 1;
+  margin-left: 20px;
+}
+.profile-img img {
+  border-radius: 50%;
+}
+
+.profile-body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+  /* line-height: 1.8; */
+}
+.profile-body .myname {
+  padding-bottom: 20px;
+  font-size: 1em;
+}
+
+.profile-body p {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 80%;
+    margin: 0;
+}
+.profile-body .p-list p {
+  padding-bottom: 15px;
+}
+
+.profile-body p:not(:last-child) {
+  margin-bottom: 1px;
+}
+
+.profile-body p img {
+  align-items: flex-start;
+  width: 7%;
+  aspect-ratio: 1 / 1;;
+  padding: 0 10px 0 20px;
+}
+/* ------
+ contact
+-------*/
+.contact {
+  text-align: center;
+}
+.contact-list img {
+  width: 80px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.contact-item:not(:last-child) {
+  margin-right: 10px;
+}
+.contact-text {
+  margin: 10px 0;
+}
+
+/* -----------
+ ページトップ
+------------*/
+.page-top {
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #333333;
+}
+.page-top .material-icons-outlined {
+  vertical-align: bottom;
+  color: #ffffff;
+}
+
+/* ==========
+  SP style 
+===========*/
+@media screen and ( max-width: 768px ) {
+ /* ------
+   works
+ -------*/
+.works-list {  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: -40px;
+  }
+  .works-item {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    color: #333333;
+  }
+  .works-img img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #b3b3b3;
+  }
+  
+    
+/* ------
+  skill
+-------*/
+  .skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: -50px;
+  }
+  .skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .skill-img {
+    max-width: 150px;
+    width: 75%;
+    height: auto;
+  }
+  .skill-body {
+    margin-left: 10px;
+  }
+  
+
+}
