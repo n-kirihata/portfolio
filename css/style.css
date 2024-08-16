@@ -198,9 +198,9 @@ body {
   margin-bottom: 40px;
   color: #333333;
 }
-.works-item:hover {
+/* .works-item:hover {
   opacity: .9;
-}
+} */
 .works-item:nth-of-type(3n) {
   margin-right: 0;
 }
